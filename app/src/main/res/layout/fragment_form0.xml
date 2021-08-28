@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Theme.DriverApp"
+    tools:context=".Fragments.addCar.formFragment0"
+    >
+        <TextView
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/ajouter_une_voiture"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/manualFill"
+            />
+
+        <Button
+            android:id="@+id/manualFill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/violet"
+            android:text="Remplir le formulaire"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/scanQR"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginTop="20dp"
+            />
+                 <TextView
+                     android:layout_marginTop="10dp"
+                     android:id="@+id/or"
+                     android:text="- ou bien -"
+                     android:textSize="10dp"
+                     android:fontFamily="@font/montserrat_semibold"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toBottomOf="@+id/manualFill"
+                     app:layout_constraintBottom_toTopOf="@+id/scanQR"
+                     />
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/scanQR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/soft_blue"
+            android:paddingHorizontal="30dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:paddingVertical="10dp"
+            android:text="Scanner"
+            android:textColor="@color/violet"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/or"
+            app:strokeColor="@color/violet"
+            app:strokeWidth="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

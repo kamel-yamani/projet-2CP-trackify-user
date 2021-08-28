@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.addCar.formFragment4">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:background="@android:color/transparent"
+                app:tint="@color/dark_grey"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/ajouter_une_voiture"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bloc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+                        android:layout_marginHorizontal="40dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="40dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/car_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="car name"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/key_matricule"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/car_name"
+                            android:layout_alignParentStart="true"
+                           android:layout_marginTop="20dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="matricule"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/value_matricule"
+                            android:layout_width="92dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/key_matricule"
+                            android:layout_alignStart="@+id/value_num_tele"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="00513 111 39"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/value_code_secret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/key_code_secret"
+                            android:layout_alignStart="@+id/value_num_tele"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="Hy_9T@Ou"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/key_code_secret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/key_matricule"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="code secret"
+                            android:textAlignment="center"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/key_num_tele"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="numéro de téléphone"
+                            android:textAlignment="center"
+                            android:textSize="13sp"
+                            android:layout_below="@+id/key_code_secret"
+                            />
+
+                        <TextView
+                            android:id="@+id/value_num_tele"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/key_num_tele"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="056 83 23 17"
+                            android:textSize="13dp"
+                            android:layout_toRightOf="@+id/key_num_tele"
+                            android:layout_marginLeft="20dp"
+                            />
+                    </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="40dp">
+
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="10sp"
+                android:text="@string/annuler"
+                android:textColor="@color/violet"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/violet"
+                app:strokeWidth="1dp"
+                style="?attr/materialButtonOutlinedStyle"
+                app:cornerRadius="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                />
+
+
+            <Button
+                android:id="@+id/confirmer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginStart="40dp"
+                android:backgroundTint="@color/violet"
+                android:text="@string/confirmer"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/annuler"
+                app:cornerRadius="6dp"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
